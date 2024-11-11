@@ -1,0 +1,572 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Nyamira Poly - Computing & Informatics</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-eduwell-style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="{% url 'my_home' %}" class="logo">
+                          <img src="{% static 'assets/images/nyamira_logo.jpg' %}" alt="Nyamira Polytecnic "width="300px" height="80px">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="{% url 'my_home' %}#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="{% url 'my_home' %}#services">Services</a></li>
+                          <li class="scroll-to-section"><a href="{% url 'my_home' %}#courses">Courses</a></li>
+                          <li class="has-sub">
+                              <a href="javascript:void(0)">More</a>
+                              <ul class="sub-menu">
+                                  <li><a href="{% url 'my_about' %}">About Us</a></li>
+                                  <li><a href="{% url 'my_services' %}">Our Services</a></li>
+                              </ul>
+                          </li>
+                          <li class="scroll-to-section"><a href="{% url 'my_home' %}#testimonials">Testimonials</a></li>
+                          <li class="scroll-to-section"><a href="{% url 'my_home' %}#contact-section">Contact Us</a></li>
+                      </ul>
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="header-text">
+            <h6>Welcome to our Department</h6>
+            <h2>Best Place To Learn Tech <em>COURSES!</em></h2>
+            <div class="main-button-gradient">
+              <div class="scroll-to-section"><a href="#contact-section">Join Us Now!</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="{% static 'assets/images/image.png' %}" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Our Services</h6>
+            <h4>Provided <em>Services</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-01.png' %}" alt="">
+                </div>
+                <h4>Educational Support</h4>
+                <p>We offer comprehensive academic support, including tutoring, library resources, and online learning platforms
+                    to ensure students succeed in their courses.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-02.png' %}" alt="">
+                </div>
+                <h4>Career Counseling</h4>
+                <p>Our career services provide expert advice and guidance to help students plan their career paths, prepare for the job market, and connect
+                    with industry professionals.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-03.png' %}" alt="">
+                </div>
+                <h4>Internships & Placements</h4>
+                <p>We offer practical internship opportunities and work placements in various industries, providing real-world experience and helping
+                    students transition into their careers.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-04.png' %}" alt="">
+                </div>
+                <h4>Vocational Training</h4>
+                <p>Our vocational training programs focus on practical skills development in fields such as plumbing, mechanical engineering, and information technology,
+                    ensuring students are job-ready.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-01.png' %}" alt="">
+                </div>
+                <h4>Technical Support</h4>
+                <p>We provide robust technical support for students and staff, ensuring seamless access to computer labs, online resources, and other
+                    technology-driven learning tools.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-02.png' %}" alt="">
+                </div>
+                <h4>Student Clubs & Activities</h4>
+                <p>Our polytechnic encourages holistic development through extracurricular activities, student clubs, and societies that foster teamwork, leadership,
+                    and personal growth.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-03.png' %}" alt="">
+                </div>
+                <h4>Financial Aid & Scholarships</h4>
+                <p>We offer various scholarships and financial aid options to ensure that deserving students have access to quality education regardless of
+                    their financial background.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-04.png' %}" alt="">
+                </div>
+                <h4>Community Engagement</h4>
+                <p>We are committed to contributing to community development through outreach programs, workshops, and social initiatives that benefit both students
+                    and the local community.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-01.png' %}" alt="">
+                </div>
+                <h4>Professional Development</h4>
+                <p>We offer workshops, seminars, and training sessions aimed at enhancing students' professional skills, such as communication, leadership, and teamwork,
+                    to better prepare them for the workforce.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-02.png' %}" alt="">
+                </div>
+                <h4>Health & Wellness Support</h4>
+                <p>Our polytechnic provides access to health services, wellness programs, and counseling to support students' physical and mental well-being,
+                    helping them thrive both academically and personally.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-03.png' %}" alt="">
+                </div>
+                <h4>Ready Target</h4>
+                <p>Our polytechnic provides modern classrooms, laboratories, workshops, and computer labs equipped with the latest technology to create an optimal
+                    learning environment for all students.</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="{% static 'assets/images/service-icon-04.png' %}" alt="">
+                </div>
+                <h4>Alumni Network & Mentorship</h4>
+                <p>We offer an active alumni network that connects graduates with current students. This mentorship program helps students gain valuable career insights
+                    and build professional connections in their field of study.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="our-courses" id="courses">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="section-heading">
+            <h6>OUR COURSES</h6>
+            <h4>What You Can <em>Learn</em></h4>
+            <p>At Nyamira National Polytechnic, we offer cutting-edge ICT programs designed to prepare you for the dynamic world of technology. Our courses focus on practical skills that align with industry standards, ensuring that you are ready for a successful career
+                in the rapidly growing tech field.</p>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="naccs">
+            <div class="tabs">
+              <div class="row">
+                <div class="col-lg-3">
+                  <div class="menu">
+                    <div class="active gradient-border"><span>Web Development</span></div>
+                    <div class="gradient-border"><span>Graphic Design</span></div>
+                    <div class="gradient-border"><span>Web Design</span></div>
+                    <div class="gradient-border"><span>WordPress</span></div>
+                  </div>
+                </div>
+                <div class="col-lg-9">
+                  <ul class="nacc">
+                    <li class="active">
+                      <div>
+                        <div class="left-image">
+                          <img src="{% static 'assets/images/courses-01.jpg' %}" alt="">
+                          <div class="price"><h6>NO 1</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>Web Development</h4>
+                          <p>Did you know that you can visit <a rel="nofollow" href="https://www.toocss.com/" target="_blank">TooCSS website</a> for latest listing of HTML templates and a variety of useful templates. 
+                          <br><br>You just need to go and visit that website right now. IF you have any suggestion or comment about this template, you can feel free to go to contact page for our email address.</p>
+                          <span>36 Hours</span>
+                          <span>4 Weeks</span>
+                          <span class="last-span">3 Certificates</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Subscribe Course</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="{% static 'assets/images/courses-02.jpg' %}" alt="">
+                          <div class="price"><h6>NO 2</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>Creative Graphic Design</h4>
+                          <p>You are not allowed to redistribute this template ZIP file on any other website without a permission from us.<br><br>There are some unethical people on this world copied and reposted our templates without any permission from us. Their Karma will hit them really hard. Yeah!</p>
+                          <span>48 Hours</span>
+                          <span>6 Weeks</span>
+                          <span class="last-span">1 Certificate</span>
+                          <div class="text-button">
+                            <a href="{% url 'my_home' %}contact-us.html">Subscribe Course</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="{% static 'assets/images/courses-03.jpg' %}" alt="">
+                          <div class="price"><h6>NO 3</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>Web Design</h4>
+                          <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
+                          <span>28 Hours</span>
+                          <span>4 Weeks</span>
+                          <span class="last-span">1 Certificate</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Subscribe Course</a>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div>
+                        <div class="left-image">
+                          <img src="{% static 'assets/images/courses-04.jpg' %}" alt="">
+                          <div class="price"><h6>NO 4</h6></div>
+                        </div>
+                        <div class="right-content">
+                          <h4>WordPress Introduction</h4>
+                          <p>Quinoa roof party squid prism sustainable letterpress cray hammock tumeric man bun mixtape tofu subway tile cronut. Deep v ennui subway tile organic seitan.<br><br>Kogi VHS freegan bicycle rights try-hard green juice probably haven't heard of them cliche la croix af chillwave.</p>
+                          <span>48 Hours</span>
+                          <span>4 Weeks</span>
+                          <span class="last-span">2 Certificates</span>
+                          <div class="text-button">
+                            <a href="contact-us.html">Subscribe Course</a>
+                          </div>
+                        </div>
+                      </div>
+                      </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 offset-lg-1">
+          <div class="left-image">
+            <img src="{% static 'assets/images/cta-left-image.png.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-5 align-self-center">
+          <h6>Get the sale right now!</h6>
+          <h4>Up to 50% OFF For 1+ courses</h4>
+          <p>Unlock huge savings when you enroll in more than one course at Nyamira National Polytechnic. Enhance your skills, expand your knowledge, and take advantage of this limited-time offer to kickstart or advance your career in ICT and beyond.
+              Don’t miss out—register now!</p>
+          <div class="white-button">
+            <a class="scroll-to-section"><a href="{% url 'my_home' %}#courses">View Courses</a></a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Testimonials</h6>
+            <h4>What They <em>Think</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-testimonials owl-carousel" style="position: relative; z-index: 5;">
+            <div class="item">
+              <p>"The practical, hands-on approach at Nyamira National Polytechnic has been invaluable for my career in web development. The instructors are knowledgeable, and the courses are up-to-date
+                  with industry standards."</p>
+                <h4>— Emily Ochieng, </h4>
+                <span>Junior Web Developer</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"Enrolling in the Cybersecurity program was one of the best decisions I made. The blend of theory and real-world applications prepared
+                  me thoroughly for the workforce."</p>
+                <h4>— Samuel Kimani</h4>
+                <span>Cybersecurity Analyst</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"The polytechnic's ICT program has given me the skills and confidence to start my own tech business. The instructors truly care about our
+                  success and make sure we understand every concept."</p>
+                <h4>— Linda Otieno</h4>
+                <span>Tech Entrepreneur</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"Nyamira National Polytechnic provides the latest tools and techniques in ICT training. I've learned so much about networking, which helped me secure a job as an
+                  IT support specialist."</p>
+                <h4>— James Mwangi</h4>
+                <span>IT Support Specialist</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"The supportive learning environment and accessible resources at Nyamira National Polytechnic made it easy to transition into my role as a software developer.
+                  I highly recommend their courses."</p>
+                <h4>— Amina Hassan</h4>
+                <span>Software Developer</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"Thanks to the data science course, I now have the analytical skills to tackle complex problems in my role. The training was
+                  comprehensive and engaging."</p>
+                <h4>— Michael Odhiambo</h4>
+                <span>Data Analyst</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"The polytechnic has been instrumental in helping me achieve my career goals. The team is dedicated to students' success,
+                  and the coursework is relevant and practical."
+              </p>
+                <h4>— Grace Mbogo</h4>
+                <span>Network Engineer</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+            <div class="item">
+              <p>"The hands-on labs and projects were fantastic! I now have the skills I need to thrive in my field, and the certificate has opened up
+                  many new opportunities."</p>
+                <h4>— Diana Njeri,</h4>
+                <span>Creative Designer</span>
+                <img src="{% static 'assets/images/quote.png' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="map">
+          
+            <!-- You just need to go to Google Maps for your own map point, and copy the embed code from Share -> Embed a map section -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6059416812227!2d35.02648107412861!3d-0.5911782352596898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182b1ad083158e6d%3A0x5c6cbfaea954fbc1!2sThe%20Nyamira%20National%20Polytechnic!5e0!3m2!1sen!2ske!4v1731266894725!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row">
+              <div class="col-lg-4 offset-lg-1">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>Phone</h4>
+                  <span>+254-704-700-699</span>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="contact-info">
+                  <div class="icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <h4>Mobile</h4>
+                  <span>+254-704-700-699</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="section-heading">
+                  <h6>Contact us</h6>
+                  <h4>Say <em>Hello</em></h4>
+                  <p>We’d love to hear from you! For any inquiries or assistance, feel free to reach out.</p>
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Full Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" id="message" placeholder="Your Message"></textarea>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-gradient-button">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">Copyright © 2024 NyamiraPoly.ac,ke., Ltd. All Rights Reserved.
+          
+          <br>Designed by: <a rel="sponsored" href="https://templatemo.com" target="_blank">OnyangoSystems</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <script src="{% static 'assets/js/isotope.min.js' %}"></script>
+    <script src="{% static 'assets/js/owl-carousel.js' %}"></script>
+    <script src="{% static 'assets/js/lightbox.js' %}"></script>
+    <script src="{% static 'assets/js/tabs.js' %}"></script>
+    <script src="{% static 'assets/js/video.js' %}"></script>
+    <script src="{% static 'assets/js/slick-slider.js' %}"></script>
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+
+</html>
